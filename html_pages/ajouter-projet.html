@@ -1,10 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajouter Projet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter Projet</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+ <header>
+    <nav>
+      <a href="lister-projet.html">Liste</a>
+      <a href="detailler-projet.html">Détail</a>
+      <a href="ajouter-projet.html">Ajouter</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Ajouter un projet</h1>
+    <form>
+      <label for="nom">Nom du projet</label>
+      <input type="text" id="nom" placeholder="Ex: Mon portfolio">
+
+      <label for="description">Description</label>
+      <textarea id="description" placeholder="Décrivez le projet..."></textarea>
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 G4 Fullstack Portfolio</p>
+  </footer>
 
 </body>
 </html>
