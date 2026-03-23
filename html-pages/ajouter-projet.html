@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G4 Fullstack Portfolio</title>
+  <title>Ajouter Projet</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+
+ <header>
     <nav>
       <a href="lister-projet.html">Liste</a>
       <a href="detailler-projet.html">Détail</a>
@@ -16,12 +17,16 @@
   </header>
 
   <main>
-    <h1>My Projects</h1>
-    <ul>
-      <li><a href="html-pages/listes-projets/projet1.html">Project 1</a></li>
-      <li><a href="html-pages/listes-projets/projet2.html">Project 2</a></li>
-      <li><a href="html-pages/listes-projets/projet3.html">Project 3</a></li>
-    </ul>
+    <h1>Ajouter un projet</h1>
+    <form>
+      <label for="nom">Nom du projet</label>
+      <input type="text" id="nom" placeholder="Ex: Mon portfolio">
+
+      <label for="description">Description</label>
+      <textarea id="description" placeholder="Décrivez le projet..."></textarea>
+
+      <button type="submit">Ajouter</button>
+    </form>
   </main>
 
   <footer>
