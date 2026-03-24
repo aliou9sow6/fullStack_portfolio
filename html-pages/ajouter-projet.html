@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ajouter un nouveau projet</title>
-  <link rel="stylesheet" href="../css_pages/ajouter-projet.css" />
+  <link rel="stylesheet" href="../css-pages/ajouter-projet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -12,11 +13,9 @@
     <div class="card">
 
       <!-- Bouton retour -->
-      <nav class="nav-btn">
-        <button class="nav-div">
-          <a href="lister-projet.html">Retour à la liste</a>
-        </button>
-      </nav>
+      <a href="lister-projets.html" class="btn-back">
+        ← Retour à la liste
+      </a>
 
       <h1 class="form-title">Ajouter un nouveau projet</h1>
 
@@ -73,6 +72,7 @@
             type="text"
             id="tech2"
             name="tech2"
+            placeholder="Ex: CSS"
           />
         </div>
 
@@ -82,6 +82,7 @@
             type="text"
             id="tech3"
             name="tech3"
+            placeholder="Ex: JavaScript"
           />
         </div>
 
