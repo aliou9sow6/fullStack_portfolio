@@ -15,6 +15,21 @@
     border-radius: 4px;
 }
 
+/* Style de la section d'en-tête avec le titre et le bouton */
+.nav-btn {
+    /* Affiche les éléments (bouton et titre) sur la même ligne */
+    display: flex;
+    
+    /* Espace entre le bouton et le titre */
+    justify-content: space-between;
+    
+    /* Aligne verticalement les éléments au centre */
+    align-items: center;
+    
+    /* Marge en bas pour séparer du reste du contenu */
+    margin-bottom: 20px;
+}
+
 /* Titre principal "Mes Projets" */
 .container h1 {
     /* Couleur de texte foncée */
@@ -73,6 +88,8 @@
     
     /* Taille de texte adaptée */
     font-size: 14px;
+
+    border-radius: 10rem; /* Bordure très arrondie pour un style "pill" */
 }
 
 /* Rectangle fin et gris pour chaque projet (ex: "Site Web E-commerce") */

@@ -1,14 +1,11 @@
-# fullStack_portfolio
-Projet fullStack_portfolio démarré par le ##Groupe_4
+# _FullStack_portfolio_
+
+Projet fullStack_portfolio _HTML5/CSS3_ démarré par le **Groupe_4**
 
 
 
 ## régles de nommage des branches :
-- feature/nom_de_la_fonctionnalité → nouvelle fonctionnalité
-
-- fix/nom_du_bug → correction de bug
-
-- hotfix/nom_de_la_correction_urgente → correction urgente en production
+- prenom_du_contribut.eur/rice
 
 - chore/nom_de_la_tâche_technique → tâches techniques (config, dépendances, etc.)
 
@@ -19,9 +16,9 @@ Projet fullStack_portfolio démarré par le ##Groupe_4
   - Être concis mais descriptif (ex: "Ajouter la fonctionnalité de connexion", "Corriger le bug d'affichage sur mobile")
   - Inclure des références si nécessaire (ex: "Fix #123" pour lier un commit à une issue)
 
-## MEMBRES DU GROUPE :
+## contributeurs :
  + Ibrahima DIALLO
+ + Anna KEITA
  + Khady PENE
- + Anna 
+ + Khadim MBAYE
  + Aliou Saidou Nourou SOW
- + Khadim 
