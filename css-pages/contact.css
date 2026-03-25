@@ -36,7 +36,8 @@ label {
   margin-bottom: 4px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.6rem 0.8rem;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -44,7 +45,8 @@ input, textarea {
   outline: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #4f8ef7;
 }
 
@@ -65,7 +67,9 @@ input:focus, textarea:focus {
   font-size: 0.95rem;
 }
 
-.btn-primary:hover { background: #3a7ae0; }
+.btn-primary:hover {
+  background: #3a7ae0;
+}
 
 .btn-cancel {
   flex: 1;
@@ -78,4 +82,29 @@ input:focus, textarea:focus {
   font-size: 0.95rem;
 }
 
-.btn-cancel:hover { background: #f5f5f5; }
+.btn-cancel:hover {
+  background: #f5f5f5;
+}
+
+
+/* ============================================
+   BOUTON RETOUR
+   ============================================ */
+.btn-back {
+  display: inline-block;
+  background-color: #0f2c5e;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 28px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #2eaf39;
+  transform: translateX(-2px);
+}
