@@ -5,69 +5,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajouter un nouveau projet</title>
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css-pages/ajouter-projet.css" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="../css-pages/form.css" />
 </head>
 
 <body>
+  <header>
 
-  <div class="page-wrapper">
-    <div class="card">
+    <img src="listes-projets/img/logo.jpeg" alt="Logo du Portfolio" class="logo" href="../index.html"/>
 
-      <!-- Bouton retour -->
-      <a href="lister-projet.html" class="btn-back">
-        🔙 Retour à la liste
-      </a>
+    <nav class="nav-menu">
+      <a href="lister-projet.html">Liste</a>
+      <a href="#" block="Ajouter">Ajouter</a>
+      <a href="contact.html">Contacts</a>
+    </nav>
+  </header>
 
-      <h1 class="form-title">Ajouter un nouveau projet</h1>
 
-      <form action="liste-projets.html" method="get" class="project-form">
+  <main>
+    <div class="content">
+      <div class="btn-back-index">
+        <button class="btn-back"><a href="../index.html">🔙Retour à l'accueil</a></button>
+      </div>
+      <h2>Ajouter un nouveau projet</h2>
+      <form id="addProjectForm">
 
-        <!-- Libellé -->
-        <div class="form-group">
-          <label for="libelle">Libellé du projet :</label>
-          <input type="text" id="libelle" name="libelle" placeholder="Ex: Mon site web" required />
-        </div>
+        <label for="projectName">Nom du projet:</label>
+        <input type="text" id="projectName" name="projectName" required />
 
-        <!-- Description -->
-        <div class="form-group">
-          <label for="description">Description :</label>
-          <textarea id="description" name="description" rows="5" placeholder="Décrivez votre projet..."></textarea>
-        </div>
+        <label for="projectDescription">Description du projet:</label>
+        <textarea id="projectDescription" name="projectDescription" required></textarea>
 
-        <!-- URL image -->
-        <div class="form-group">
-          <label for="image">URL de l'image :</label>
-          <input type="url" id="image" name="image" placeholder="https://example.com/image.jpg" />
-        </div>
+        <label for="projectTechnologies">Technologie 1 </label>
+        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
 
-        <!-- Technologies -->
-        <div class="form-group">
-          <label for="tech1">Technologie 1 :</label>
-          <input type="text" id="tech1" name="tech1" placeholder="Ex: HTML" />
-        </div>
+        <label for="projectTechnologies">Technologie 2 </label>
+        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+
+        <label for="projectTechnologies">Technologie 3 </label>
+        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
 
         <div class="form-group">
-          <label for="tech2">Technologie 2 :</label>
-          <input type="text" id="tech2" name="tech2" placeholder="Ex: CSS" />
+          <label for="projectImage">Image du projet:</label>
+          <input type="file" id="projectImage" name="projectImage" accept="image/*" />
         </div>
 
-        <div class="form-group">
-          <label for="tech3">Technologie 3 :</label>
-          <input type="text" id="tech3" name="tech3" placeholder="Ex: JavaScript" />
-        </div>
-
-        <!-- Actions -->
-        <div class="form-actions">
-          <button type="submit" class="btn-primary">Créer le projet</button>
-          <a href="lister-projet.html" class="btn-cancel">Annuler</a>
+        <div class="btn-sub-res">
+          <button type="submit">Ajouter le projet</button>
+          <button type="reset">Réinitialiser</button>
         </div>
 
       </form>
     </div>
-  </div>
+  </main>
 
+  <footer>
+    <p>&copy; 2026 G4 Fullstack Portfolio</p>
+  </footer>
 </body>
 
 </html>
