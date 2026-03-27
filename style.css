@@ -92,7 +92,6 @@ h1, h2 {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 
@@ -106,19 +105,3 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 600px) { /* Permet d'adapter la mise en page pour les écrans plus petits */
-  .nav-menu {
-    flex-direction: column;
-  } /* Ajustement de l'espacement entre les liens de navigation pour les écrans plus petits */
-  
-  .nav-menu a {
-    margin: 10px 0;
-  } /* Ajustement de la largeur du contenu principal pour les écrans plus petits */
-  main {
-    width: 90%;
-    margin: 1rem auto;
-  } /* Ajustement de la taille des titres pour les écrans plus petits */
-  h1 {
-    font-size: 1.5rem;
-  } /* Ajustement de la taille des boutons pour les écrans plus petits */
-} 

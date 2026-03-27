@@ -7,6 +7,8 @@
   <title>Création du formulaire de contact </title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css-pages/contact.css" />
+  <link rel="stylesheet" href="../css-pages/form.css" />
+
 </head>
 
 <body>
@@ -14,16 +16,31 @@
     <nav class="nav-menu">
       <a href="lister-projet.html">Liste</a>
       <a href="ajouter-projet.html">Ajouter</a>
-      <a href="#" block="contact">Contacts</a> 
+      <a href="#" block="contact">Contacts</a>
     </nav>
   </header>
 
-  <div class="btn-back-index">
-    <button class="btn-back"><a href="../index.html">🔙Retour à l'accueil</a></button>
-  </div>
-
   <main>
     <div class="content">
+      <div>
+        <button class="btn-back"><a href="../index.html">🔙Retour à l'accueil</a></button>
+      </div>
+      <h2>Contactez-nous</h2>
+      <form id="contactForm">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="btn-sub-res">
+          <button type="submit">Envoyer</button>
+          <button type="reset">Réinitialiser</button>
+        </div>
+      </form>
     </div>
   </main>
 
