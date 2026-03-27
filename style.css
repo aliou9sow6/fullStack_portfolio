@@ -9,8 +9,11 @@ body {
 
 .nav-menu {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding: 0.5rem;
+  background-color: #34495e;
+  border-radius: 10px;  
 }
 
 .nav-menu a {
@@ -25,11 +28,22 @@ body {
 
 /* En-tête */
 header {
+  display: flex;
+  flex-direction: row;
   background-color: #2c3e50;
   color: white;
   text-align: center;
   padding: 1rem;
+  gap: 70%;
 }
+
+header img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;;
+  border-radius: 90px;
+}
+
 
 .header h1 {
   margin: 0;
