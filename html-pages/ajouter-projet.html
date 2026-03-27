@@ -6,68 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajouter un nouveau projet</title>
   <link rel="stylesheet" href="../css-pages/ajouter-projet.css" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
+  <header>
+    <nav class="nav-menu">
+      <a href="lister-projet.html">Liste</a>
+      <a href="#" block="Ajouter">Ajouter</a>
+      <a href="contact.html">Contacts</a>
+    </nav>
+  </header>
 
-  <div class="page-wrapper">
-    <div class="card">
-
-      <!-- Bouton retour -->
-      <a href="lister-projet.html" class="btn-back">
-        🔙 Retour à la liste
-      </a>
-
-      <h1 class="form-title">Ajouter un nouveau projet</h1>
-
-      <form action="liste-projets.html" method="get" class="project-form">
-
-        <!-- Libellé -->
-        <div class="form-group">
-          <label for="libelle">Libellé du projet :</label>
-          <input type="text" id="libelle" name="libelle" placeholder="Ex: Mon site web" required />
-        </div>
-
-        <!-- Description -->
-        <div class="form-group">
-          <label for="description">Description :</label>
-          <textarea id="description" name="description" rows="5" placeholder="Décrivez votre projet..."></textarea>
-        </div>
-
-        <!-- URL image -->
-        <div class="form-group">
-          <label for="image">URL de l'image :</label>
-          <input type="url" id="image" name="image" placeholder="https://example.com/image.jpg" />
-        </div>
-
-        <!-- Technologies -->
-        <div class="form-group">
-          <label for="tech1">Technologie 1 :</label>
-          <input type="text" id="tech1" name="tech1" placeholder="Ex: HTML" />
-        </div>
-
-        <div class="form-group">
-          <label for="tech2">Technologie 2 :</label>
-          <input type="text" id="tech2" name="tech2" placeholder="Ex: CSS" />
-        </div>
-
-        <div class="form-group">
-          <label for="tech3">Technologie 3 :</label>
-          <input type="text" id="tech3" name="tech3" placeholder="Ex: JavaScript" />
-        </div>
-
-        <!-- Actions -->
-        <div class="form-actions">
-          <button type="submit" class="btn-primary">Créer le projet</button>
-          <a href="lister-projet.html" class="btn-cancel">Annuler</a>
-        </div>
-
-      </form>
-    </div>
+  <div class="btn-back-index">
+    <button class="btn-back"><a href="../index.html">🔙Retour à l'accueil</a></button>
   </div>
 
+  <main>
+    <div class="content">
+      <h2>Ajouter un nouveau projet</h2>
+      <form id="addProjectForm">
+        <label for="projectName">Nom du projet:</label>
+        <input type="text" id="projectName" name="projectName" required />
+
+        <label for="projectDescription">Description du projet:</label>
+        <textarea id="projectDescription" name="projectDescription" required></textarea>
+
+        <label for="projectTechnologies">Technologie 1 </label>
+        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+
+        <label for="projectTechnologies">Technologie 2 </label>
+        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+
+        <label for="projectTechnologies">Technologie 3 </label>
+        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+
+        <div class="form-group">
+          <label for="projectImage">Image du projet:</label>
+          <input type="file" id="projectImage" name="projectImage" accept="image/*" /> 
+        </div>
+
+        <button type="submit">Ajouter le projet</button>
+        <button type="reset">Réinitialiser</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 G4 Fullstack Portfolio</p>
+  </footer>
 </body>
 
 </html>
